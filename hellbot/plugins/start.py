@@ -11,7 +11,7 @@ from ..helper.miscs import clog, get_file_id
 
 
 GROUPS = get_collections("GROUPS")
-BOT_PIC = "https://te.legra.ph/file/2a24a198476d4abf505da.jpg"
+BOT_PIC = "https://te.legra.ph/file/a3685d590ff1c7ed32978.jpg"
 START_TIME = datetime.datetime.utcnow()
 START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
 TIME_DURATION_UNITS = (
@@ -34,16 +34,16 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(command("start") & filters.private & ~filters.edited)
+@Client.on_message(command("slovesp") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=BOT_PIC,
-        caption=f"<b><i>Hello there!! \nI'm a Telegram voice chat music player by @Its_Hellbot. Enjoy my advanced features along with a simple and sexy interface</b></i>",
+        caption=f"<b><i>Hello there!! \nI'm a Telegram voice chat music player by @Itz_me_tychon. Enjoy my advanced features along with a simple and sexy interface</b></i>",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Add In Group 🦜",
+                        "🎶Add In Group🔥",
                         url=f"https://t.me/{BUN}?startgroup=true",
                     )
                 ],
@@ -53,15 +53,15 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "Channel 🍀", url=f"https://t.me/its_hellbot"
+                        "🔥Channel🔮", url=f"https://t.me/electro_updates"
                     ),
                     InlineKeyboardButton(
-                        "Source Code", url="https://github.com/The-HellBot/Music"
+                        "🔮Support🔥", url="https://t.me/electrobot_support"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "Deployed By", url=f"tg://openmessage?user_id={OWNER}"
+                        "🎶Ashiq🔥", url=f"tg://openmessage?user_id={OWNER}"
                     )
                 ]
            ]
@@ -69,7 +69,7 @@ async def start_(client: Client, message: Message):
     )
 
 
-@Client.on_message(commandpro(["/start", "/alive"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["/slovesp", "/zinda"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     gid = message.chat.id
     gidtype = message.chat.type

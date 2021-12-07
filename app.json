@@ -1,12 +1,12 @@
 {
-    "name": "HellBot Music",
-    "logo": "https://te.legra.ph/file/2a24a198476d4abf505da.jpg",
-    "description": "A telegram voice chat music player officially from The HellBot.",
-    "keywords": ["music", "voice chat", "telegram", "pyrogram", "pytgcalls", "hellbot"],
-    "repository": "https://github.com/HellBoy-OP/Music",
+    "name": "Electro Music",
+    "logo": "https://te.legra.ph/file/a3685d590ff1c7ed32978.jpg",
+    "description": "A telegram voice chat music player officially from Team-Electro.",
+    "keywords": ["music", "voice chat", "telegram", "pyrogram", "pytgcalls", "Team-Electro"],
+    "repository": "https://github.com/the-tychon/Music",
     "stack": "container",
     "env": {
-        "HELLBOT_SESSION": {
+        "SESSION_NAME": {
             "description": "Paste pyrogram string session."
         },
         "BOT_TOKEN": {
